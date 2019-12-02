@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CG curvas</title>
+		<link type="text/css" rel="stylesheet" href="main.css">
+		<style>
+			body {
+				background-color: 0xf0f0f0;
+				color: #444;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <div id="info">Trabalho Computação Gráfica - Matheus Simões</div> -->
+
+		<div id="info">
+			<a>Trabalho Computação Gráfica - Matheus Simões</a></br>
+			<button id="addPoint">Adicionar ponto</button>
+			<button id="removePoint">Remover ponto</button>
+			<button id="bezier" style="background-color:green;">Bézier</button>
+			<button id="hermite" style="background-color:red;">Hermite</button>
+			<button id="catmull" style="background-color:red;">Catmull-Rom</button>
+			<button id="bSpline" style="background-color:red;">B-Spline</button>
+		</div>
+
+		<div id="bottomInfo">
+			<a style="bottom:0px">OBS: Na curva de Hermite os pontos ímpares são usados como vetores tangentes da curva nos pontos de controle.</a></br>
+		</div>
+
+		<script src="js/three.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/math.js"></script>
+		<script src="js/bezier.js"></script>
+		<script src="js/hermite.js"></script>
+		<script src="js/catmull-rom.js"></script>
+		<script src="js/bSpline.js"></script>
+	</body>
+</html>
